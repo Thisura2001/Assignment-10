@@ -3,7 +3,8 @@ function clearDisplay() {
 }
 
 function appendToDisplay(value) {
-    document.getElementById('display').value += value;
+    var displayValue = document.getElementById('display').value;
+    document.getElementById('display').value = displayValue + value;
 }
 
 function calculateResult() {
